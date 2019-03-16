@@ -11,6 +11,7 @@ import matplotlib.pyplot as pl
 
 #Criando um vetor com valores que serão usados em todos os graficos
 t = np.arange(-5,5,0.01)
+t60 = np.arange(0,0.1,0.001)
 
 #Calculos dos exemplos das funções exponeciais reais
 x = 3*(np.exp(2*t))
@@ -20,7 +21,7 @@ y = 3*(np.exp(-2*t))
 x1 = 3*(np.exp(1j*(2*t)))
 
 #Calculos dos exemplos das funções cossenoidais
-x2 = 220 * np.sqrt(2) * np.sin(2 * np.pi * np.radians(60) * t)
+x2 = 220 * np.sqrt(2) * np.sin(2 * np.pi * 60 * t60)
  
 
 #Nome da figura e tamanho da janela a ser aberta
@@ -51,7 +52,7 @@ pl.subplot(2,2,4)
 pl.title(r'220$\sqrt{2}\sin(2\pi$60t)')
 pl.grid(True)
 pl.xlabel('t')
-pl.plot(t, x2)
+pl.plot(t60, x2)
 
 
  

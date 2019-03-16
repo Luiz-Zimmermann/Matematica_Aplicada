@@ -24,7 +24,7 @@ t = np.arange(-4, 4.1 , 0.1)
 #função f(t), inicia em -2, sobe ate 2 em t=-1, e inicia a exponencial em t=1
 z1 = (((2 * (t+2) * u(t+2)) - (2*(t+1) * u(t+1)))
             -(((2 * (t+2) * u(t+2)) - (2*(t+1) * u(t+1)))*u(t-1))) + ((2 * np.e ** -(t - 1)) * u(t - 1))
-#função f(-t) a exponencial começa em t=-4 e acaba em t=-1, depois a função continua de t=-1 ate t=1, onde começa a decrescer,até t=2
+#função f(-t) a exponencial começa em t=-4 e acaba em t=-1, depois a função continua de t=-1 ate t=1, onde começa a decrescer 
 z2 = (((2 * (-t+2) * u(-t+2)) - (2*(-t+1) * u(-t+1)))
             -(((2 * (-t+2) * u(-t+2)) - (2*(-t+1) * u(-t+1)))*u(-t-1))) + ((2 * np.e ** -(-t - 1)) * u(-t - 1))
             
